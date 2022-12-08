@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +10,100 @@
     <!-- Css Files -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- Css Bootstrap -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
+    <!-- TODO NavBar Start -->
+    <nav class="navbar bg-light navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DevManunega</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="bx bx-menu"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#inicio">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobreMi">Sobre Mi</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-success">Contactar</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar End -->
+    <!-- TODO Contenido Principal Start -->
+    <div class="container mt-5">
+        <div class="row vh-100  bg-danger bg-opacity-50" id="inicio">
+            <div class="col">
+                <img src="./assets/images/svg/Web Developer_Flatline.svg" alt="Desarrollo web">
+                <h3>Desarrollo Web</h3>
+                <p>Trabajando para brindar soluciones</p>
+            </div>
+        </div>
+        <div class="row vh-100 pt-5 bg-info bg-opacity-50 overflow-scroll" id="proyectos">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="card mt-2">
+                    <img src="./assets/images/svg/Web Developer_Flatline.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto "Hola Mundo"</h5>
+                        <p class="card-text">Desarrollado con el fin de saludar con un mensaje "Hola Mundo"</p>
+                        <a href="#" class="btn btn-primary">Vista previa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="card mt-2">
+                    <img src="./assets/images/svg/Web Developer_Flatline.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto "Hola Mundo"</h5>
+                        <p class="card-text">Desarrollado con el fin de saludar con un mensaje "Hola Mundo"</p>
+                        <a href="#" class="btn btn-primary">Vista previa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="card mt-2">
+                    <img src="./assets/images/svg/Web Developer_Flatline.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto "Hola Mundo"</h5>
+                        <p class="card-text">Desarrollado con el fin de saludar con un mensaje "Hola Mundo"</p>
+                        <a href="#" class="btn btn-primary">Vista previa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row vh-100 pt-5 bg-success bg-opacity-50" id="habilidades">
             <div class="col">
                 <h1 class="display-1">
-                    Devmanunega...
+                    Habilidades
+                </h1>
+            </div>
+        </div>
+        <div class="row vh-100 pt-5 bg-black bg-opacity-50" id="sobreMi">
+            <div class="col">
+                <h1 class="display-1">
+                    Sobre Mi
                 </h1>
             </div>
         </div>
@@ -29,4 +115,5 @@
     <!-- Bootstrap Javascript -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
