@@ -6,3 +6,26 @@ Autor: devManu
 Versión: 1.0.0
 Fecha: 11/12/2023
 */
+
+section {
+    height: 80vh;
+}
+
+section div.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section#home {
+    background-color: tomato;
+}
+
+section#proyectos {
+    background-color: aquamarine;
+}
+
+nav {
+    background-color: aliceblue;
+}
+
