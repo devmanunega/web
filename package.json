@@ -1,0 +1,29 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Sitio web personal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devmanunega/web.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "nodejs",
+    "bootstrap"
+  ],
+  "author": "devManu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devmanunega/web/issues"
+  },
+  "homepage": "https://github.com/devmanunega/web#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
