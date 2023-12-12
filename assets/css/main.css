@@ -7,24 +7,60 @@ Versión: 1.0.0
 Fecha: 11/12/2023
 */
 
-main {
-    margin-top: 5%;
-}
-
 #home .col {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 30px;
 }
 
-#home .col{
+#home h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #222;
     text-align: center;
 }
 
-section {
-    height: 80vh;
+#home p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #888;
 }
+
+#sobreMi h2 {
+    padding-top: 20px;
+    font-size: 38px;
+    font-weight: 600;
+    color: #222;
+    text-align: left;
+}
+
+#sobreMi span {
+    color: #2b8feb;
+}
+
+#datosBasicos {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section {
+    height: 100vh;
+}
+
+section#home {
+    background: url(../img/layered-waves-haikei.svg);
+    background: url(../img/layered-waves-haikei-wide.svg);
+    background-size: cover;
+}
+
+main {
+    background-color: #f9f9f9
+}
+
+
 
 
 /* --------------------------- */
