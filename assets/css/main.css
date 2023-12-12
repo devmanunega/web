@@ -7,25 +7,54 @@ Versión: 1.0.0
 Fecha: 11/12/2023
 */
 
+main {
+    margin-top: 5%;
+}
+
+#home .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home .col{
+    text-align: center;
+}
+
 section {
     height: 80vh;
 }
 
-section div.col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+
+/* --------------------------- */
+/* Media Querys */
+/* --------------------------- */
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+
+Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) { 
+    #navbarPrincipal > ul {
+        margin-top: 5px;
+    }
+
+    #navbarPrincipal .nav-link {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
 }
 
-section#home {
-    background-color: tomato;
-}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
 
-section#proyectos {
-    background-color: aquamarine;
-}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
 
-nav {
-    background-color: aliceblue;
-}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
 
