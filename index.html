@@ -39,7 +39,7 @@
             <a class="nav-link" href="#sobreMi">Sobre Mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
+            <a class="nav-link" href="#Portafolio">Portafolio</a>
           </li>
           <button class="btn btn-success" type="button">
             Contactarme
@@ -71,10 +71,10 @@
     <!-- End Section Home -->
 
     <!-- Section sobreMi -->
-    <section class="row" id="sobreMi">
+    <section class="row mx-2 overflow-scroll" id="sobreMi">
 
       <!-- Datos Basicos -->
-      <div class="col mx-4">
+      <div class="col col-12 col-md-6 mb-5">
         <h2>Sobre <span class="t-em">Mi</span></h2>
         <p>Soy un desarrollador web altamente comprometido y entusiasta, mi dedicación hacia la excelencia se refleja en cada aspecto de mi trabajo. Poseo una sólida base de conocimientos en el desarrollo web y me adapto para aprender nuevas tecnologías con rapidez.</p>
         <div id="datosBasicos">
@@ -86,9 +86,8 @@
         </div>
       </div>
       <!-- End Datos Basicos -->
-
       <!-- Servicios -->
-      <div class="col mx-4" id="servicios">
+      <div class="col col-12 col-md-6 mb-5" id="servicios">
         <h2>Lo que <span class="t-em">hago</span></h2>
           <div class="row pt-4">
             <div class="col">
@@ -113,15 +112,124 @@
           </div>
       </div>
       <!-- End Servicios -->
+      <!-- Resumen -->
+      <div class="col col-12">
+        <h2>Resumen</h2>
+
+        <div class="row">
+          <div class="col">
+            <!-- Timeline -->
+            <div class="container mt-3">
+              <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                  <div class="card border-0" style="background-color: transparent;">
+                    <div class="card-body">
+                      <h6 class="card-title">Educación</h6>
+                      <div id="content">
+                        <ul class="timeline">
+                          <li class="event" data-date="2015">
+                            <h3>Graduación</h3>
+                            <p>Título profesional, logro importante en mi carrera profesional.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <h6 class="card-title">Experiencia</h6>
+                      <div id="content">
+                        <ul class="timeline">
+                          <li class="event" data-date="2019 - Hoy">
+                            <h3>GERA</h3>
+                            <p>Analista de datos, construcción y soporte de soluciones TI.</p>
+                          </li>
+                          <li class="event" data-date="2015 - 2019">
+                            <h3>Comfacor</h3>
+                            <p>Desarrollo de actividades de apoyo y asistencia orientadas a herramientas TIC.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+            <!-- End Timeline -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-12 col-md-6 my-5">
+        <h2>Habilidades de <span class="t-em">codificación</span></h2>
+        <div class="row d-flex flex-row align-items-center mt-5">
+          <div class="col col-4">
+            <h6 class="m-0">Html</h6>
+          </div>
+          <div class="col">
+            <div class="progress" role="progressbar" aria-label="Codificacion en html" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info text-dark" style="width: 91%">91%</div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex flex-row align-items-center my-2">
+          <div class="col col-4">
+            <h6 class="m-0">Css</h6>
+          </div>
+          <div class="col">
+            <div class="progress" role="progressbar" aria-label="Codificacion en css" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info text-dark" style="width: 89%">89%</div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex flex-row align-items-center my-2">
+          <div class="col col-4">
+            <h6 class="m-0">Javascript</h6>
+          </div>
+          <div class="col">
+            <div class="progress" role="progressbar" aria-label="Codificacion en css" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info text-dark" style="width: 93%">93%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-12 col-md-6 my-5">
+        <h2>Conocimientos</h2>
+        <div class="row">
+          <div class="col d-flex flex-row flex-wrap gap-1">
+            <span class="badge bg-info fs-6 black-m fw-semibold rounded-1 me-2">Análisis de datos</span>
+            <span class="badge bg-info fs-6 black-m fw-semibold rounded-1 me-2">AWS</span>
+            <span class="badge bg-info fs-6 black-m fw-semibold rounded-1 me-2">Comunicación</span>
+            <span class="badge bg-info fs-6 black-m fw-semibold rounded-1 me-2">Administración de procesos</span>
+            <span class="badge bg-info fs-6 black-m fw-semibold rounded-1 me-2">Automatización</span>
+            <span class="badge bg-info fs-6 black-m fw-semibold rounded-1 me-2">Flexibilidad</span>
+          </div>
+        </div>
+      </div>
+
+    <!-- End Resumen -->
     </section>
     <!-- End Section sobreMi -->
 
-    <!-- Section Proyectos -->
-    <section class="row" id="proyectos">
+    <!-- Section Portafolio -->
+    <section class="row mx-2 mt-5" id="portafolio">
       <div class="col">
+        <div class="row">
+          <h2 class="mb-5">Portafolio</h2>
+          <!-- Proyecto 1 -->
+          <div class="col d-flex flex-column align-items-center">
+            <div class="card d-flex align-items-center" style="width: 18rem;">
+              <img src="assets/img/web-developer.svg" alt="..." width="50%" class="mt-3">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Proyecto 1 -->
+        </div>
       </div>
     </section>
-    <!-- End Section Proyectos -->
+    <!-- End Section Portafolio -->
   </main>
   <!-- End Main -->
 
