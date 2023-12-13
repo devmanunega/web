@@ -10,19 +10,24 @@
 
   <!-- Bootstrap Css -->
   <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 <body>
-  <!-- Start Nav -->
+  <!-- Navbar -->
   <nav class="navbar sticky-top navbar-expand-md bg-body">
     <div class="container">
 
       <!-- Logo -->
       <a href="#" class="navbar-brand">devManu</a>
+      <!-- End logo -->
       
       <!-- Btn Toggler -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- End Btn Toggler -->
 
       <!-- Items Menu -->
       <div class="collapse navbar-collapse" id="navbarPrincipal">
@@ -41,11 +46,13 @@
           </button>
         </ul>
       </div>
+      <!-- End Items menu -->
 
     </div>
   </nav>
-  <!-- End Nav -->
+  <!-- End Navbar -->
 
+  <!-- Main -->
   <main 
   class="container"
   data-bs-spy="scroll"
@@ -53,6 +60,7 @@
   data-bs-root-margin="0px 0px -20%"
   data-bs-smooth-scroll="true"
   tabindex="0">
+    <!-- Section Home -->
     <section class="row" id="home">
       <div class="col">
         <img src="assets/img/web-developer.svg" alt="Desarrollador web">
@@ -60,26 +68,62 @@
         <p class="text-secondary fs-5">Desarrollador web - Frontend</p>
       </div>
     </section>
+    <!-- End Section Home -->
 
+    <!-- Section sobreMi -->
     <section class="row" id="sobreMi">
+
+      <!-- Datos Basicos -->
       <div class="col mx-4">
-        <h2>Sobre <span>Mi</span></h2>
+        <h2>Sobre <span class="t-em">Mi</span></h2>
         <p>Soy un desarrollador web altamente comprometido y entusiasta, mi dedicación hacia la excelencia se refleja en cada aspecto de mi trabajo. Poseo una sólida base de conocimientos en el desarrollo web y me adapto para aprender nuevas tecnologías con rapidez.</p>
         <div id="datosBasicos">
-          <p><span>Edad</span> 33</p>
-          <p><span>Residencia</span> Colombia</p>
-          <p><span>Dirección</span>Monteria</p>
-          <p><span>e-mail</span>devmanunega@gmail.com</p>
-          <p><span>Telefono</span>3000002222</p>
+          <p><span class="t-em">Edad</span> 33</p>
+          <p><span class="t-em">Residencia</span> Colombia</p>
+          <p><span class="t-em">Dirección</span> Monteria</p>
+          <p><span class="t-em">e-mail</span> devmanunega@gmail.com</p>
+          <p><span class="t-em">Telefono</span> 3000002222</p>
         </div>
       </div>
+      <!-- End Datos Basicos -->
+
+      <!-- Servicios -->
+      <div class="col mx-4" id="servicios">
+        <h2>Lo que <span class="t-em">hago</span></h2>
+          <div class="row pt-4">
+            <div class="col">
+              <i class="bi bi-pencil-square t-em fs-1"></i>
+              <h4 class="fw-semibold">Desarrollo Web</h4>
+              <p>Diseño y desarrollo de sitios web con un enfoque hacia la calidad y simplicidad, tratando en cada momento superar los estándares convencionales.</p>
+            </div>
+          </div>
+          <div class="row pt-4">
+            <div class="col">
+              <i class="bi bi-graph-up t-em fs-1"></i>
+              <h4 class="fw-semibold">Análisis de datos</h4>
+              <p>Recolectar, organizar, transformar y analizar datos; todo esto para llevar a cabo la toma de decisiones fundamentada en hechos.</p>
+            </div>
+          </div>
+          <div class="row pt-4">
+            <div class="col">
+              <i class="bi bi-list-task t-em fs-1"></i>
+              <h4 class="fw-semibold">Administración de tareas</h4>
+              <p>Llevar a cabo tareas relacionadas con sistemas, procesos y aquellas que involucren el manejo o administración de software. </p>
+            </div>
+          </div>
+      </div>
+      <!-- End Servicios -->
     </section>
+    <!-- End Section sobreMi -->
+
+    <!-- Section Proyectos -->
     <section class="row" id="proyectos">
       <div class="col">
       </div>
     </section>
+    <!-- End Section Proyectos -->
   </main>
-
+  <!-- End Main -->
 
 
 

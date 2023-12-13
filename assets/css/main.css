@@ -36,14 +36,16 @@ Fecha: 11/12/2023
     text-align: left;
 }
 
-#sobreMi span {
-    color: #2b8feb;
-}
-
 #datosBasicos {
     display: flex;
     flex-direction: column;
     
+}
+
+#servicios div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 section {
@@ -58,6 +60,15 @@ section#home {
 
 main {
     background-color: #f9f9f9
+}
+
+
+/* --------------------------- */
+/* Clases */
+/* --------------------------- */
+
+.t-em {
+    color: #2b8feb;
 }
 
 
