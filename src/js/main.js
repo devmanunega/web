@@ -1,0 +1,1 @@
+// Archivo javascript para la funcionalidad requerida
