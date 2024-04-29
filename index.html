@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,140 @@
   <!-- Css Bootstrap -->
   <link rel="stylesheet" href="./src/css/Bootstrap.css">
 </head>
+
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1 class="display-1">Devmanu</h1>
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Devmanu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 me-3 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#sobreMi">Sobre mi</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="contact">
+          <button class="btn btn-outline-success" type="submit"><a href="#contactarme">Contactarme</a></button>
+        </form>
       </div>
     </div>
-  </div>
+  </nav>
+  <div class="container">
+    
+
+    <!-- Hero -->
+    <div class="row" id="hero">
+      <div class="col">
+        <h1>Desarrollo web y soluciones TI</h1>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+
+    <!-- Proyectos -->
+    <div class="row" id="proyectos">
+      <div class="col">
+        <h2>Proyectos</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="sobreMi">
+      <div class="col">
+        <h2>Sobre mi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+      </div>
+    </div>
+
+    <div class="row" id="contactarme">
+      <div class="col" >
+      </div>
+
+      <div class="col">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+        
+        <div class="mb-3">
+          <label for="basic-url" class="form-label">Your vanity URL</label>
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+          </div>
+          <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+        </div>
+        
+        <div class="input-group mb-3">
+          <span class="input-group-text">$</span>
+          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-text">.00</span>
+        </div>
+        
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+        </div>
+        
+        <div class="input-group">
+          <span class="input-group-text">With textarea</span>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+      </div>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,3 @@
+(Fondo Hero)[<a href="https://www.freepik.es/vector-gratis/ilustracion-concepto-lista-comprobacion-equipo_28766185.htm#&position=10&from_view=author&uuid=280f6f50-203d-4841-b01e-29b236b177aa">Imagen de storyset</a> en Freepik]
+
+(Fondo Contactarme)[<a href="https://www.freepik.es/vector-gratis/ilustracion-concepto-calidad-producto_18407468.htm#&position=0&from_view=author&uuid=d6a8d52b-2771-43af-8c53-b5b6f8ad1c2a">Imagen de storyset</a> en Freepik]
