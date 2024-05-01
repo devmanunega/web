@@ -1,5 +1,18 @@
+:root {
+  --background-color: #f5f5f5
+}
+
+body {
+  background-color: var(--background-color);
+}
+
 nav {
   background-color: #fefefe;
+  transition: all 0.5s;
+}
+
+.nav-sticky-focus {
+  margin-top: 5px;
   border-bottom: 1px solid #f3f3f3;
 }
 
@@ -17,7 +30,6 @@ nav button a {
   align-items: center;
   text-align: center;
   color: #414141;
-  font-size: 2rem;
 }
 
 #hero .col:nth-child(2){
