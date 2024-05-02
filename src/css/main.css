@@ -38,6 +38,10 @@ nav button a {
   height: 100%;
 }
 
+#hero h1 {
+  font-size: 4rem;
+}
+
 #proyectos {
   border: 1px dashed tomato;
   height: 80vh;
@@ -47,7 +51,6 @@ nav button a {
   align-items: center;
   text-align: center;
   color: #414141;
-  font-size: 2rem;
 }
 
 #proyectos h2 {
@@ -63,7 +66,6 @@ nav button a {
   align-items: center;
   text-align: center;
   color: #414141;
-  font-size: 2rem;
 
 }
 
@@ -72,11 +74,8 @@ nav button a {
   height: 80vh;
   margin: 5vh 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
   color: #414141;
-  font-size: 2rem;
 }
 
 #contactarme .col:nth-child(1){
