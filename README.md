@@ -1,80 +1,60 @@
-# devManu · Portafolio Web
+# Hola, soy devManu 👋
 
-Portafolio personal de **devManu**, desarrollador full-stack. Sitio estático construido con **HTML5, CSS3 y JavaScript vanilla** (módulos ES nativos), con diseño *dark glassmorphism*, animaciones y soporte de modo claro/oscuro.
+**Desarrollador Full-Stack · Especialista en C# y .NET**
 
-## ✨ Características
+Construyo soluciones de TI enfocadas en resolver problemas específicos de negocio, combinando ingeniería de software, automatización de procesos y una mirada creativa para entregar productos que la gente disfruta usar.
 
-- **Modo claro / oscuro** con detección automática de la preferencia del sistema (`prefers-color-scheme`), persistencia en `localStorage` (segura, sin romper en navegación privada) y script anti-FOUC en el `<head>`.
-- **Diseño responsive** (desktop, tablet, móvil) con menú hamburguesa a pantalla completa y bloqueo de scroll al abrirse.
-- **Animaciones al hacer scroll** basadas en `IntersectionObserver` (aparición de secciones, barras de habilidades, contadores animados).
-- **Efecto de escritura** (typewriter) en el hero.
-- **Cursor personalizado** con seguimiento suavizado (se desactiva en dispositivos táctiles).
-- **Scrollspy**: el enlace de navegación se marca activo según la sección visible.
-- **Formulario de contacto** con validación client-side y envío simulado (punto de integración documentado para backend/Formspree).
-- **Accesibilidad**: `aria-label`/`aria-expanded` en controles, `prefers-reduced-motion` respetado.
+---
 
-## 🗂 Estructura del proyecto
+## 💼 Lo que hago
 
-```
-web/
-├── index.html            # Página única (one-page) con script anti-FOUC y guardián de carga
-├── css/
-│   └── styles.css        # Variables de tema (claro/oscuro), glassmorphism, responsive
-├── js/
-│   ├── main.js           # Punto de entrada: importa e inicializa los módulos
-│   └── modules/          # Un módulo ES por responsabilidad
-│       ├── theme.js      # Modo claro/oscuro + persistencia
-│       ├── cursor.js     # Cursor personalizado
-│       ├── typewriter.js # Efecto de escritura
-│       ├── navbar.js     # Scroll, progreso de lectura y menú móvil
-│       ├── reveal.js     # Factory de IntersectionObserver + contadores
-│       ├── scrollspy.js  # Link activo por sección
-│       └── contactForm.js# Validación y envío del formulario
-└── images/
-```
+- **Automatización de procesos** — Scripts robustos con Selenium y herramientas TI que eliminan tareas repetitivas y reducen errores operativos.
+- **Desarrollo de software y web** — Aplicaciones y experiencias web modernas, rápidas y escalables con C#, .NET, HTML, CSS y JavaScript.
+- **Gestión y análisis de datos** — Consolidación, manipulación y visualización de información con SQL y Excel avanzado para la toma de decisiones.
+- **Multimedia y comunicación visual** — Edición profesional de video e imagen para presentar datos complejos de forma clara y atractiva.
 
-## 🚀 Puesta en marcha
+## 🚀 Proyectos destacados
 
-> ⚠️ **Importante**: el proyecto usa **módulos ES nativos** (`<script type="module">`), que los navegadores bloquean al abrir el sitio directamente con `file://` (doble clic en `index.html`). Sirve el sitio con cualquier servidor estático:
+| Proyecto | Descripción | Stack |
+|---|---|---|
+| 🛒 **NovaShop** | Plataforma de e-commerce headless con pagos integrados, búsqueda instantánea y panel de administración en tiempo real. | Next.js · Stripe · PostgreSQL |
+| 📊 **PulseBoard** | Dashboard analítico en tiempo real con visualizaciones interactivas y alertas inteligentes. | React · D3.js · WebSockets |
+| 🎧 **Echoify** | App de descubrimiento musical con recomendaciones basadas en IA y playlists colaborativas. | Vue · Nuxt · Spotify API |
+| 💼 **FinTrack** | App móvil de finanzas personales con presupuesto inteligente y sincronización bancaria segura. | React Native · GraphQL · AWS |
+| 🤖 **LexiBot** | Asistente conversacional para atención al cliente con NLP avanzado y analítica de conversaciones. | Python · FastAPI · OpenAI |
+| 🗺️ **RutaViva** | Red social de viajes con mapas interactivos e itinerarios compartidos de más de 40 países. | Svelte · Mapbox · Firebase |
 
-```bash
-# Opción 1 (Node.js)
-npx serve .
+## 🧰 Tecnologías
 
-# Opción 2 (Python)
-python -m http.server 8080
-```
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white&labelColor=1e1e2e)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white&labelColor=1e1e2e)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white&labelColor=1e1e2e)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black&labelColor=1e1e2e)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white&labelColor=1e1e2e)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white&labelColor=1e1e2e)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white&labelColor=1e1e2e)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white&labelColor=1e1e2e)
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white&labelColor=1e1e2e)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white&labelColor=1e1e2e)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=1e1e2e)
 
-Luego abre `http://localhost:8080` (o el puerto que indique tu herramienta).
+## 📈 Trayectoria
 
-Si los módulos no llegan a cargar, la consola del navegador mostrará una advertencia con estas instrucciones.
+- **Analista de datos · Gera** — Automatización de procesos y análisis de datos para la toma de decisiones estratégicas: dashboards interactivos y reportes automatizados que mejoran la eficiencia operativa.
+- **Auxiliar CTC · Comfacor** — Inicios profesionales: herramientas de gestión de datos y automatización de procesos internos en atención al cliente y soporte técnico.
 
-## 🔧 Personalización
+## 🤝 Trabajemos juntos
 
-| Qué | Dónde |
-|---|---|
-| Frases del typewriter | `TYPED_PHRASES` en `js/main.js` |
-| Temas de color | Bloques `:root` (oscuro) y `html[data-theme="light"]` en `css/styles.css` |
-| Backend del formulario | Sustituir la simulación en `js/modules/contactForm.js` |
-| Contadores del hero | Atributos `data-count` en `index.html` |
+Estoy disponible para **proyectos freelance, colaboraciones y oportunidades a tiempo completo**. Cuéntame tu idea y te responderé en menos de 24 horas.
 
-## 🧹 Caché de assets
+[![Email](https://img.shields.io/badge/hola@alexrivera.dev-Escríbeme-7c6cff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1e1e2e)](mailto:hola@alexrivera.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-devmanunega-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1e1e2e)](https://www.linkedin.com/in/devmanunega)
+[![GitHub](https://img.shields.io/badge/GitHub-devmanunega-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e)](https://github.com/devmanunega)
 
-Los archivos estáticos se versionan por query string (`styles.css?v=4`, `main.js?v=5`). **Al modificar CSS o JS, incrementa la versión** en `index.html` para forzar a los navegadores a descargar la nueva versión.
+---
 
-## 🌿 Flujo de trabajo (Git)
+<div align="center">
 
-- **`master`**: rama estable de producción.
-- **`Develop`**: rama de integración.
-- Ramas de trabajo por cambio: `feat/*`, `fix/*`, `refactor/*`, `docs/*`.
-- Los commits siguen la convención [Conventional Commits](https://www.conventionalcommits.org/es/) (`feat:`, `fix:`, `refactor:`, `docs:`) y las integraciones se hacen con `--no-ff` para preservar el historial.
+💜 Diseñado y desarrollado con mucho café
 
-```
-feat/fix/refactor/docs/*  →  Develop  →  master
-```
-
-## 🛠 Tecnologías
-
-- HTML5 semántico
-- CSS3 (variables, grid, glassmorphism, `color-scheme`)
-- JavaScript vanilla · módulos ES nativos (sin frameworks ni build step)
+</div>
