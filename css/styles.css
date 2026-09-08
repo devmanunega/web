@@ -275,12 +275,18 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
 }
 .nav-link:hover { color: var(--text); }
 .nav-link.active { color: var(--text); background: var(--surface-hover); }
-.nav-cta {
-  color: #fff !important;
+/* Fix especificidad: al llegar a la sección de contacto, el observer agrega
+   .active al enlace y .nav-link.active (0,2,0) sobreescribía .nav-cta (0,1,0),
+   dejando el CTA con fondo blanco en lugar del gradiente. Con .nav-link.nav-cta
+   (0,2,0, declarado después) y .nav-link.nav-cta.active (0,3,0) el gradiente
+   siempre prevalece. Se elimina el !important, ya innecesario. */
+.nav-link.nav-cta,
+.nav-link.nav-cta.active {
+  color: #fff;
   background: var(--gradient);
   box-shadow: 0 4px 18px rgba(124, 108, 255, 0.35);
 }
-.nav-cta:hover { filter: brightness(1.1); }
+.nav-link.nav-cta:hover { filter: brightness(1.1); }
 
 .hamburger {
   display: none; flex-direction: column; gap: 5px;
