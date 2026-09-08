@@ -3,6 +3,61 @@
    ============================================================ */
 "use strict";
 
+/* ---------- Modo claro / oscuro ---------- */
+const THEME_KEY = "theme";
+const themeToggle = document.getElementById("themeToggle");
+const rootEl = document.documentElement;
+
+function getStoredTheme() {
+  try {
+    return localStorage.getItem(THEME_KEY);
+  } catch (e) {
+    return null; // almacenamiento no disponible (navegación privada)
+  }
+}
+
+function storeTheme(theme) {
+  try {
+    localStorage.setItem(THEME_KEY, theme);
+  } catch (e) {
+    /* sin persistencia: el tema solo dura la sesión */
+  }
+}
+
+function applyTheme(theme) {
+  rootEl.setAttribute("data-theme", theme);
+  themeToggle.setAttribute(
+    "aria-label",
+    theme === "dark" ? "Cambiar a modo claro" : "Cambiar a modo oscuro"
+  );
+}
+
+(function initTheme() {
+  // El tema ya fue aplicado por el script inline del <head> (anti-FOUC).
+  // Solo se sincroniza el estado del botón.
+  const current = rootEl.getAttribute("data-theme") === "light" ? "light" : "dark";
+  applyTheme(current);
+
+  themeToggle.addEventListener("click", () => {
+    const next = rootEl.getAttribute("data-theme") === "light" ? "dark" : "light";
+    applyTheme(next);
+    storeTheme(next);
+  });
+
+  // Si el usuario nunca eligió un tema, seguir los cambios del sistema en vivo
+  const media = window.matchMedia("(prefers-color-scheme: light)");
+  const onSystemChange = (e) => {
+    if (!getStoredTheme()) {
+      applyTheme(e.matches ? "light" : "dark");
+    }
+  };
+  if (media.addEventListener) {
+    media.addEventListener("change", onSystemChange);
+  } else if (media.addListener) {
+    media.addListener(onSystemChange); // Safari antiguo
+  }
+})();
+
 /* ---------- Cursor personalizado ---------- */
 const dot = document.querySelector(".cursor-dot");
 const ring = document.querySelector(".cursor-ring");
