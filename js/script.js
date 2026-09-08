@@ -137,18 +137,24 @@ onScroll();
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 
-hamburger.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("open");
+function setMobileMenu(open) {
+  navLinks.classList.toggle("open", open);
   hamburger.classList.toggle("open", open);
   hamburger.setAttribute("aria-expanded", open);
+  // El navbar no debe tener backdrop-filter mientras el menú esté abierto:
+  // un filtro convierte al navbar en el containing block de los elementos
+  // position:fixed y confina el menú al alto del navbar.
+  navbar.classList.toggle("menu-open", open);
+  // Bloquear el scroll del fondo mientras el menú esté abierto
+  document.body.style.overflow = open ? "hidden" : "";
+}
+
+hamburger.addEventListener("click", () => {
+  setMobileMenu(!navLinks.classList.contains("open"));
 });
 
 navLinks.querySelectorAll("a").forEach((link) =>
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    hamburger.classList.remove("open");
-    hamburger.setAttribute("aria-expanded", "false");
-  })
+  link.addEventListener("click", () => setMobileMenu(false))
 );
 
 /* ---------- Animaciones al hacer scroll (IntersectionObserver) ---------- */
