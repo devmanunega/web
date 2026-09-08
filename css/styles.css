@@ -631,6 +631,15 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
 
   .hamburger { display: flex; }
   .theme-toggle { position: relative; z-index: 1001; }
+  /* Fix: el backdrop-filter de .navbar.scrolled convierte al navbar en el
+     containing block de los descendientes position:fixed, por lo que el menú
+     móvil (.nav-links, fixed + inset:0) quedaba confinado al alto del navbar
+     y se veía incompleto. Al abrir el menú se retira el blur para que el menú
+     vuelva a posicionarse respecto al viewport y ocupe toda la pantalla. */
+  .navbar.menu-open {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
   .nav-links {
     position: fixed; inset: 0;
     flex-direction: column; justify-content: center; gap: 14px;
