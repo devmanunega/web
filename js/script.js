@@ -34,8 +34,8 @@ if (window.matchMedia("(hover: hover)").matches) {
 /* ---------- Efecto de escritura ---------- */
 const phrases = [
   "Desarrollador Full-Stack",
-  "Especialista en React y Node.js",
-  "Creador de experiencias digitales",
+  "Especialista en C# y .Net",
+  "Creador de soluciones digitales",
   "Amante del código limpio",
 ];
 const typedEl = document.getElementById("typed");
