@@ -638,6 +638,22 @@
       <a href="#inicio" class="to-top" aria-label="Volver arriba">↑</a>
     </footer>
 
-    <script src="js/script.js?v=3"></script>
+    <!-- Módulos ES: main.js orquesta todos los módulos de js/modules/
+         (deferred por defecto; se ejecutan tras parsear el HTML). -->
+    <script type="module" src="js/main.js?v=5"></script>
+    <script>
+      /* Garantía de carga de módulos: main.js agrega la clase "js-ready" al
+         <html> al inicializarse. Los módulos ES se bloquean al abrir la página
+         vía file:// (política CORS del navegador), así que si la clase no
+         aparece tras window.load se advierte en consola con la solución. */
+      window.addEventListener("load", function () {
+        if (!document.documentElement.classList.contains("js-ready")) {
+          console.warn(
+            "[portfolio] Los módulos ES no se cargaron. Si abres index.html directamente (file://), " +
+              "sirve el sitio con un servidor local, p. ej.: npx serve .  ó  python -m http.server"
+          );
+        }
+      });
+    </script>
   </body>
 </html>
