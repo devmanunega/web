@@ -13,17 +13,6 @@ Construyo soluciones de TI enfocadas en resolver problemas específicos de negoc
 - **Gestión y análisis de datos** — Consolidación, manipulación y visualización de información con SQL y Excel avanzado para la toma de decisiones.
 - **Multimedia y comunicación visual** — Edición profesional de video e imagen para presentar datos complejos de forma clara y atractiva.
 
-## 🚀 Proyectos destacados
-
-| Proyecto | Descripción | Stack |
-|---|---|---|
-| 🛒 **NovaShop** | Plataforma de e-commerce headless con pagos integrados, búsqueda instantánea y panel de administración en tiempo real. | Next.js · Stripe · PostgreSQL |
-| 📊 **PulseBoard** | Dashboard analítico en tiempo real con visualizaciones interactivas y alertas inteligentes. | React · D3.js · WebSockets |
-| 🎧 **Echoify** | App de descubrimiento musical con recomendaciones basadas en IA y playlists colaborativas. | Vue · Nuxt · Spotify API |
-| 💼 **FinTrack** | App móvil de finanzas personales con presupuesto inteligente y sincronización bancaria segura. | React Native · GraphQL · AWS |
-| 🤖 **LexiBot** | Asistente conversacional para atención al cliente con NLP avanzado y analítica de conversaciones. | Python · FastAPI · OpenAI |
-| 🗺️ **RutaViva** | Red social de viajes con mapas interactivos e itinerarios compartidos de más de 40 países. | Svelte · Mapbox · Firebase |
-
 ## 🧰 Tecnologías
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white&labelColor=1e1e2e)
