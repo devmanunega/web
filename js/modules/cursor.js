@@ -30,7 +30,7 @@ export function initCursor() {
     requestAnimationFrame(follow);
   })();
 
-  document.querySelectorAll("a, button, .chip, .project, .card, input, textarea").forEach((el) => {
+  document.querySelectorAll("a, button, .chip, .card, input, textarea").forEach((el) => {
     el.addEventListener("mouseenter", () => ring.classList.add("hovering"));
     el.addEventListener("mouseleave", () => ring.classList.remove("hovering"));
   });

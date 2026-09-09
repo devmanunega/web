@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=4" />
+    <link rel="stylesheet" href="css/styles.css?v=6" />
     <script>
       /* Aplica el tema antes del primer render para evitar parpadeo (FOUC).
          Prioridad: preferencia guardada -> preferencia del sistema -> oscuro. */
@@ -60,7 +60,7 @@
         <a href="#inicio" class="nav-link active">Inicio</a>
         <a href="#sobre-mi" class="nav-link">Sobre mí</a>
         <a href="#habilidades" class="nav-link">Habilidades</a>
-        <a href="#proyectos" class="nav-link">Proyectos</a>
+        
         <a href="#experiencia" class="nav-link">Experiencia</a>
         <a href="#contacto" class="nav-link nav-cta">Contacto</a>
       </nav>
@@ -129,8 +129,8 @@
             escalabilidad.
           </p>
           <div class="hero-actions reveal">
-            <a href="#proyectos" class="btn btn-primary">
-              Ver proyectos
+            <a href="#sobre-mi" class="btn btn-primary">
+              Sobre mí
               <svg
                 width="18"
                 height="18"
@@ -317,144 +317,11 @@
           </div>
         </div>
       </section>
-
-      <!-- ===== PROYECTOS ===== -->
-      <section class="section" id="proyectos">
-        <div class="container">
-          <div class="section-head reveal">
-            <span class="section-tag">03 · Proyectos</span>
-            <h2 class="section-title">Trabajo seleccionado</h2>
-          </div>
-          <div class="projects-grid">
-            <article class="project glass reveal">
-              <div class="project-thumb" style="--h1: #6366f1; --h2: #a855f7">
-                <span>🛒</span>
-              </div>
-              <div class="project-body">
-                <div class="project-tags">
-                  <span>Next.js</span><span>Stripe</span><span>PostgreSQL</span>
-                </div>
-                <h3>NovaShop</h3>
-                <p>
-                  Plataforma de e-commerce headless con pagos integrados,
-                  búsqueda instantánea y panel de administración en tiempo real.
-                </p>
-                <div class="project-links">
-                  <a href="#" class="project-link">Ver demo ↗</a>
-                  <a href="#" class="project-link">Código ↗</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project glass reveal">
-              <div class="project-thumb" style="--h1: #06b6d4; --h2: #3b82f6">
-                <span>📊</span>
-              </div>
-              <div class="project-body">
-                <div class="project-tags">
-                  <span>React</span><span>D3.js</span><span>WebSockets</span>
-                </div>
-                <h3>PulseBoard</h3>
-                <p>
-                  Dashboard analítico en tiempo real con visualizaciones
-                  interactivas, alertas inteligentes y exportación de informes.
-                </p>
-                <div class="project-links">
-                  <a href="#" class="project-link">Ver demo ↗</a>
-                  <a href="#" class="project-link">Código ↗</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project glass reveal">
-              <div class="project-thumb" style="--h1: #f43f5e; --h2: #fb923c">
-                <span>🎧</span>
-              </div>
-              <div class="project-body">
-                <div class="project-tags">
-                  <span>Vue</span><span>Nuxt</span><span>Spotify API</span>
-                </div>
-                <h3>Echoify</h3>
-                <p>
-                  App de descubrimiento musical con recomendaciones basadas en
-                  IA, playlists colaborativas y modo fiesta sincronizado.
-                </p>
-                <div class="project-links">
-                  <a href="#" class="project-link">Ver demo ↗</a>
-                  <a href="#" class="project-link">Código ↗</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project glass reveal">
-              <div class="project-thumb" style="--h1: #10b981; --h2: #84cc16">
-                <span>💼</span>
-              </div>
-              <div class="project-body">
-                <div class="project-tags">
-                  <span>React Native</span><span>GraphQL</span><span>AWS</span>
-                </div>
-                <h3>FinTrack</h3>
-                <p>
-                  App móvil de finanzas personales con escaneo de recibos,
-                  presupuesto inteligente y sincronización bancaria segura.
-                </p>
-                <div class="project-links">
-                  <a href="#" class="project-link">Ver demo ↗</a>
-                  <a href="#" class="project-link">Código ↗</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project glass reveal">
-              <div class="project-thumb" style="--h1: #8b5cf6; --h2: #ec4899">
-                <span>🤖</span>
-              </div>
-              <div class="project-body">
-                <div class="project-tags">
-                  <span>Python</span><span>FastAPI</span><span>OpenAI</span>
-                </div>
-                <h3>LexiBot</h3>
-                <p>
-                  Asistente conversacional para atención al cliente con NLP
-                  avanzado, integración multicanal y analítica de
-                  conversaciones.
-                </p>
-                <div class="project-links">
-                  <a href="#" class="project-link">Ver demo ↗</a>
-                  <a href="#" class="project-link">Código ↗</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project glass reveal">
-              <div class="project-thumb" style="--h1: #f59e0b; --h2: #ef4444">
-                <span>🗺️</span>
-              </div>
-              <div class="project-body">
-                <div class="project-tags">
-                  <span>Svelte</span><span>Mapbox</span><span>Firebase</span>
-                </div>
-                <h3>RutaViva</h3>
-                <p>
-                  Red social de viajes con mapas interactivos, itinerarios
-                  compartidos y galerías geolocalizadas de más de 40 países.
-                </p>
-                <div class="project-links">
-                  <a href="#" class="project-link">Ver demo ↗</a>
-                  <a href="#" class="project-link">Código ↗</a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <!-- ===== EXPERIENCIA ===== -->
       <section class="section section-alt" id="experiencia">
         <div class="container">
           <div class="section-head reveal">
-            <span class="section-tag">04 · Experiencia</span>
+            <span class="section-tag">03 · Experiencia</span>
             <h2 class="section-title">Mi trayectoria</h2>
           </div>
           <div class="timeline">
@@ -486,7 +353,7 @@
       <section class="section" id="contacto">
         <div class="container">
           <div class="section-head reveal">
-            <span class="section-tag">05 · Contacto</span>
+            <span class="section-tag">04 · Contacto</span>
             <h2 class="section-title">
               ¿Construimos algo<br />extraordinario?
             </h2>
@@ -640,7 +507,7 @@
 
     <!-- Módulos ES: main.js orquesta todos los módulos de js/modules/
          (deferred por defecto; se ejecutan tras parsear el HTML). -->
-    <script type="module" src="js/main.js?v=5"></script>
+    <script type="module" src="js/main.js?v=6"></script>
     <script>
       /* Garantía de carga de módulos: main.js agrega la clase "js-ready" al
          <html> al inicializarse. Los módulos ES se bloquean al abrir la página
